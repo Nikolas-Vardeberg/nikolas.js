@@ -1,3 +1,8 @@
-import { init } from "./framework/"
+import { init } from "./framework";
+import { p } from "./framework/element";
 
-init("#app", console.log("Hello"));
+
+const firstName = "Nikolas";
+const lastName = "Vardeberg";
+
+init("#app", p`Hello ${firstName} ${lastName}`);
